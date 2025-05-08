@@ -21,9 +21,19 @@
             </div>
 
             <div class="mb-3">
-                <label for="kode_pos" class="form-label">Kode Pos:</label>
-                <input type="text" class="form-control" id="kode_pos" name="kode_pos" 
-                    value="{{ old('kode_pos', $wilayah->kode_pos) }}" required>
+                <label for="kode_pos" class="form-label">Kode Pos (5 Angka):</label>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    id="kode_pos" 
+                    name="kode_pos" 
+                    value="{{ old('kode_pos', $wilayah->kode_pos) }}"
+                    pattern="[0-9]{5}"
+                    minlength="5"
+                    maxlength="5"
+                    title="Kode pos harus 5 digit angka"
+                    required
+                >
             </div>
 
             <div class="mb-3">

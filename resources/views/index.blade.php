@@ -33,7 +33,7 @@
     <div class="container mt-4">
         <div class="row mb-4">
             <div class="col">
-                <h1 class="display-5">CRUD Wilayah</h1>
+                <h1 class="display-5">Daftar Wilayah</h1>
                 <a href="{{ route('create') }}" class="btn btn-primary mb-3">
                     <i class="bi bi-plus-circle"></i> Tambah Wilayah
                 </a>

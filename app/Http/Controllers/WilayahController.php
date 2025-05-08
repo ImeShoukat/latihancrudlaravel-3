@@ -22,7 +22,7 @@ class WilayahController extends Controller
     {
         $request->validate([
             'nama_wilayah' => 'required',
-            'kode_pos' => 'required',
+            'kode_pos' => 'required|numeric|digits:5',
             'keterangan' => 'nullable|string',
         ]);
 
@@ -40,7 +40,7 @@ class WilayahController extends Controller
     {
         $request->validate([
             'nama_wilayah' => 'required',
-            'kode_pos' => 'required',
+            'kode_pos' => 'required|numeric|digits:5',
             'keterangan' => 'nullable|string',
         ]);
 
